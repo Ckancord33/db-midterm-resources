@@ -19,7 +19,7 @@ DEPTH IS NOT NULL
 ORDER BY DEPTH DESC;
 
 -- 4.  ¿Cuál es el nombre de los países donde la agricultura representa al menos el 50% del producto interno bruto? -- use INNER JOIN ... ON 
-SELECT NAME
+SELECT NAME, ECONOMY.AGRICULTURE
 FROM COUNTRY
   INNER JOIN ECONOMY
     ON COUNTRY.CODE = ECONOMY.COUNTRY
