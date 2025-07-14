@@ -10,13 +10,13 @@ WHERE NAME LIKE '%Malawi%';
 -- 3.  ¿Cuáles son los nombres y la superficie de todos los lagos en orden decreciente de profundidad? 
 SELECT NAME, AREA, DEPTH
 FROM LAKE
-ORDER BY DEPTH;
+ORDER BY DEPTH DESC;
 
 -- Alternativa si se quiere deshacer de los null
 SELECT NAME, AREA, DEPTH
 FROM LAKE  WHERE
 DEPTH IS NOT NULL
-ORDER BY DEPTH;
+ORDER BY DEPTH DESC;
 
 -- 4.  ¿Cuál es el nombre de los países donde la agricultura representa al menos el 50% del producto interno bruto? -- use INNER JOIN ... ON 
 SELECT NAME
